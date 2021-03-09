@@ -3,7 +3,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/dreece2304/CSE-412/main/CombinedData.json"},
   "width": 650,
-  "height": 300,
+  "height": 400,
   "encoding": {"x": {"field": "Year", "type": "temporal"}},
   "layer": [
     {
@@ -21,15 +21,15 @@
       "mark": "rule",
       "encoding": {
         "opacity": {
-          "condition": {"value": 0.3, "param": "hover", "empty": false},
+          "condition": {"value": 0.2, "param": "hover", "empty": false},
           "value": 0
         },
         "tooltip": [
-          {"field": "World", "type": "quantitative"},
-          {"field": "China", "type": "quantitative"},
-          {"field": "EU", "type": "quantitative"},
-          {"field": "India", "type": "quantitative"},
-          {"field": "USA", "type": "quantitative"}
+          {"field": "World", "type": "quantitative", "format": ".2f"},
+          {"field": "China", "type": "quantitative", "format": ".2f"},
+          {"field": "EU", "type": "quantitative","format": ".2f"},
+          {"field": "India", "type": "quantitative","format": ".2f"},
+          {"field": "USA", "type": "quantitative","format": ".2f"}
         ]
       },
       "params": [{

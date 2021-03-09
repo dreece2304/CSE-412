@@ -2,14 +2,14 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {
     "url": "https://raw.githubusercontent.com/dreece2304/CSE-412/main/CombinedData.json"},
-  "width": 700,
-  "height": 450,
+  "width": 650,
+  "height": 400,
   "encoding": {"x": {"field": "Year", "type": "temporal"}},
   "layer": [
     {
      "encoding": {
        "color": {"field": "Country", "type": "nominal"},
-       "y": {"field": "Emissions", "type":"quantitative"} 
+       "y": {"field": "Emissions", "type":"quantitative", "title": "GHG Emissions [Billion Tons CO2]"} 
     },
     "layer": [
       {"mark": "line"},
